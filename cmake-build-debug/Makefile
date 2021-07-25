@@ -169,6 +169,87 @@ push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
+stack.o: stack.c.o
+
+.PHONY : stack.o
+
+# target to build an object file
+stack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.o
+.PHONY : stack.c.o
+
+stack.i: stack.c.i
+
+.PHONY : stack.i
+
+# target to preprocess a source file
+stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.i
+.PHONY : stack.c.i
+
+stack.s: stack.c.s
+
+.PHONY : stack.s
+
+# target to generate assembly for a file
+stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.s
+.PHONY : stack.c.s
+
+utils/ft_clean.o: utils/ft_clean.c.o
+
+.PHONY : utils/ft_clean.o
+
+# target to build an object file
+utils/ft_clean.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_clean.c.o
+.PHONY : utils/ft_clean.c.o
+
+utils/ft_clean.i: utils/ft_clean.c.i
+
+.PHONY : utils/ft_clean.i
+
+# target to preprocess a source file
+utils/ft_clean.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_clean.c.i
+.PHONY : utils/ft_clean.c.i
+
+utils/ft_clean.s: utils/ft_clean.c.s
+
+.PHONY : utils/ft_clean.s
+
+# target to generate assembly for a file
+utils/ft_clean.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_clean.c.s
+.PHONY : utils/ft_clean.c.s
+
+utils/ft_utils1.o: utils/ft_utils1.c.o
+
+.PHONY : utils/ft_utils1.o
+
+# target to build an object file
+utils/ft_utils1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils1.c.o
+.PHONY : utils/ft_utils1.c.o
+
+utils/ft_utils1.i: utils/ft_utils1.c.i
+
+.PHONY : utils/ft_utils1.i
+
+# target to preprocess a source file
+utils/ft_utils1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils1.c.i
+.PHONY : utils/ft_utils1.c.i
+
+utils/ft_utils1.s: utils/ft_utils1.c.s
+
+.PHONY : utils/ft_utils1.s
+
+# target to generate assembly for a file
+utils/ft_utils1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils1.c.s
+.PHONY : utils/ft_utils1.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +262,15 @@ help:
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
+	@echo "... stack.o"
+	@echo "... stack.i"
+	@echo "... stack.s"
+	@echo "... utils/ft_clean.o"
+	@echo "... utils/ft_clean.i"
+	@echo "... utils/ft_clean.s"
+	@echo "... utils/ft_utils1.o"
+	@echo "... utils/ft_utils1.i"
+	@echo "... utils/ft_utils1.s"
 .PHONY : help
 
 

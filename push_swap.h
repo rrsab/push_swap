@@ -10,4 +10,35 @@
 # include <string.h>
 # include "libft/libft.h"
 
+typedef struct pss_list
+{
+	int				value;
+	int				index;
+	int 			keep;
+	struct pss_list	*next;
+	struct pss_list	*next_sort;
+}					pst_list;
+
+typedef struct s_heap
+{
+	pst_list 			*a;
+	pst_list 			*b;
+	int 			max;
+	int 			big;
+	int 			size;
+	int 			group_cnt;
+	int				group_sz;
+	int 			print;
+	pst_list			*temp;
+	int 			action_count;
+}					t_heap;
+
+void	ft_clear_all(t_heap *heap);
+void	ft_read_argv(int argc, char **argv, t_heap *heap);
+void 	ft_exit_error(t_heap *heap);
+void	ft_free_list(pst_list **list);
+int		ft_list_dubl_value(pst_list *l, int value);
+void	ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap);
+int		ft_atoi_new(const char *str, t_heap *heap);
+
 #endif

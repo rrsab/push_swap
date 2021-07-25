@@ -2,7 +2,7 @@ NAME	= push_swap
 
 BONUS	= push_swap_bonus
 
-SRCS	= push_swap.c
+SRCS	= push_swap.c stack.c utils/ft_clean.c utils/ft_utils1.c
 
 SRCS_B	=
 

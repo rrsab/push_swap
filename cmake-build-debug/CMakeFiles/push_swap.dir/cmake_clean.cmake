@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/push_swap.c.o"
+  "CMakeFiles/push_swap.dir/stack.c.o"
+  "CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
+  "CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
   "push_swap"
   "push_swap.pdb"
 )

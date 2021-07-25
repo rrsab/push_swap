@@ -84,6 +84,15 @@
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/stack.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_clean.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_utils1.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
