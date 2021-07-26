@@ -40,5 +40,7 @@ void	ft_free_list(pst_list **list);
 int		ft_list_dubl_value(pst_list *l, int value);
 void	ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap);
 int		ft_atoi_new(const char *str, t_heap *heap);
+int		ft_check_sort(t_heap *m);
+void	ft_sort_list(pst_list **start_list);
 
 #endif

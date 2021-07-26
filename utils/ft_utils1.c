@@ -50,3 +50,4 @@ int	ft_atoi_new(const char *str, t_heap *heap)
 	}
 	return (sign * result);
 }
+

@@ -40,14 +40,28 @@ int main(int argc, char **argv)
 	if (argc <= 1)
 		return (write(1, "\n", 1));
 	ft_read_argv(argc, argv, &heap);
+
+	if (!ft_check_sort(&heap))
+	{
+		start_tag = (heap.a);
+		ft_sort_list(&start_tag);
+//		нужно написать функции ft_list_sort
+//		tag_list
+	}
 	start_tag = (heap.a);
 	//tmp = argv;
 	printf("Hello, World!\n");
-	while (start_tag->next)
+	printf("heap.a = %p \n", heap.a);
+	while (start_tag)
 	{
-		printf("heap.a = %d \n", start_tag->value);
+		printf("heap.a = %d ", start_tag->value);
+		printf(" heap.a = %p ", start_tag);
+		printf(" heap.a.next = %p ", start_tag->next);
+		printf(" heap.a.next_sort = %p \n", start_tag->next_sort);
 		start_tag = start_tag->next;
 	}
-	printf("heap.a = %d \n", start_tag->value);
+	//printf("heap.a = %d \n", start_tag->value);
+	ft_clear_all(&heap);
+	start_tag = NULL;
 	return 0;
 }
