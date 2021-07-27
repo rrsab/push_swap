@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/salyce/CLionProjects/push_swap
+CMAKE_SOURCE_DIR = /Users/ramil/CLionProjects/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/salyce/CLionProjects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ramil/CLionProjects/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles /Users/salyce/CLionProjects/push_swap/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles /Users/ramil/CLionProjects/push_swap/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -250,6 +250,33 @@ utils/ft_utils1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils1.c.s
 .PHONY : utils/ft_utils1.c.s
 
+utils/ft_utils2.o: utils/ft_utils2.c.o
+
+.PHONY : utils/ft_utils2.o
+
+# target to build an object file
+utils/ft_utils2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils2.c.o
+.PHONY : utils/ft_utils2.c.o
+
+utils/ft_utils2.i: utils/ft_utils2.c.i
+
+.PHONY : utils/ft_utils2.i
+
+# target to preprocess a source file
+utils/ft_utils2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils2.c.i
+.PHONY : utils/ft_utils2.c.i
+
+utils/ft_utils2.s: utils/ft_utils2.c.s
+
+.PHONY : utils/ft_utils2.s
+
+# target to generate assembly for a file
+utils/ft_utils2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils2.c.s
+.PHONY : utils/ft_utils2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -271,6 +298,9 @@ help:
 	@echo "... utils/ft_utils1.o"
 	@echo "... utils/ft_utils1.i"
 	@echo "... utils/ft_utils1.s"
+	@echo "... utils/ft_utils2.o"
+	@echo "... utils/ft_utils2.i"
+	@echo "... utils/ft_utils2.s"
 .PHONY : help
 
 

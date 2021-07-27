@@ -19,7 +19,17 @@ int ft_check_sort(t_heap *m)
 	return (1);
 }
 
-void ft_sort_list(pst_list **start_list)
+void    ft_swap_list(pst_list **prevnext, pst_list *last)
+{
+    pst_list    *swap;
+
+    swap = *prevnext;
+    *prevnext = last->next_sort;
+    swap->next_sort = last->next_sort->next_sort;
+    (*prevnext)->next_sort = swap;
+}
+
+void    ft_sort_list(pst_list **start_list)
 {
 	pst_list	*last;
 	pst_list	*prev;
