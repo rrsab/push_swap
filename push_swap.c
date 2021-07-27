@@ -45,19 +45,24 @@ int main(int argc, char **argv)
 	{
 		start_tag = (heap.a);
 		ft_sort_list(&start_tag);
+		ft_list_sum(start_tag, &heap);
+		if (heap.max == 5)
+			ft_sort_five_list(&heap);
 //		нужно написать функции ft_list_sort
 //		tag_list
 	}
 	start_tag = (heap.a);
 	//tmp = argv;
-	printf("Hello, World!\n");
+
+
 	printf("heap.a = %p \n", heap.a);
 	while (start_tag)
 	{
-		printf("heap.a = %d ", start_tag->value);
-		printf(" heap.a = %p ", start_tag);
-		printf(" heap.a.next = %p ", start_tag->next);
-		printf(" heap.a.next_sort = %p \n", start_tag->next_sort);
+		printf("heap.a = %10d ", start_tag->value);
+		printf(" heap.a = %10p ", start_tag);
+		printf(" heap.a.next = %16p ", start_tag->next);
+		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
+		printf(" heap.a.index = %10d \n", start_tag->index);
 		start_tag = start_tag->next;
 	}
 	//printf("heap.a = %d \n", start_tag->value);

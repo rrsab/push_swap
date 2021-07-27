@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+# include "../push_swap.h"
 
 void	ft_clear_all(t_heap *heap)
 {

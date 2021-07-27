@@ -3,4 +3,4 @@ project(push_swap C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(push_swap push_swap.c push_swap.h utils/ft_clean.c utils/ft_utils1.c utils/ft_utils2.c stack.c)
+add_executable(push_swap push_swap.c push_swap.h utils/ft_clean.c utils/ft_utils1.c utils/ft_utils2.c init_stack.c utils/ft_sort_five.c)

@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ramil/CLionProjects/push_swap/push_swap.c" "/Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
-  "/Users/ramil/CLionProjects/push_swap/stack.c" "/Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/stack.c.o"
-  "/Users/ramil/CLionProjects/push_swap/utils/ft_clean.c" "/Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
-  "/Users/ramil/CLionProjects/push_swap/utils/ft_utils1.c" "/Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
-  "/Users/ramil/CLionProjects/push_swap/utils/ft_utils2.c" "/Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
+  "/Users/salyce/CLionProjects/push_swap/init_stack.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/init_stack.c.o"
+  "/Users/salyce/CLionProjects/push_swap/push_swap.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_clean.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_utils1.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_utils2.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

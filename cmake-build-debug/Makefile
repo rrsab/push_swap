@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ramil/CLionProjects/push_swap
+CMAKE_SOURCE_DIR = /Users/salyce/CLionProjects/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ramil/CLionProjects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/salyce/CLionProjects/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles /Users/ramil/CLionProjects/push_swap/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles /Users/salyce/CLionProjects/push_swap/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ramil/CLionProjects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,33 @@ push_swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+init_stack.o: init_stack.c.o
+
+.PHONY : init_stack.o
+
+# target to build an object file
+init_stack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.o
+.PHONY : init_stack.c.o
+
+init_stack.i: init_stack.c.i
+
+.PHONY : init_stack.i
+
+# target to preprocess a source file
+init_stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.i
+.PHONY : init_stack.c.i
+
+init_stack.s: init_stack.c.s
+
+.PHONY : init_stack.s
+
+# target to generate assembly for a file
+init_stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.s
+.PHONY : init_stack.c.s
+
 push_swap.o: push_swap.c.o
 
 .PHONY : push_swap.o
@@ -169,33 +196,6 @@ push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
-stack.o: stack.c.o
-
-.PHONY : stack.o
-
-# target to build an object file
-stack.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.o
-.PHONY : stack.c.o
-
-stack.i: stack.c.i
-
-.PHONY : stack.i
-
-# target to preprocess a source file
-stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.i
-.PHONY : stack.c.i
-
-stack.s: stack.c.s
-
-.PHONY : stack.s
-
-# target to generate assembly for a file
-stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack.c.s
-.PHONY : stack.c.s
-
 utils/ft_clean.o: utils/ft_clean.c.o
 
 .PHONY : utils/ft_clean.o
@@ -222,6 +222,33 @@ utils/ft_clean.s: utils/ft_clean.c.s
 utils/ft_clean.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_clean.c.s
 .PHONY : utils/ft_clean.c.s
+
+utils/ft_sort_five.o: utils/ft_sort_five.c.o
+
+.PHONY : utils/ft_sort_five.o
+
+# target to build an object file
+utils/ft_sort_five.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o
+.PHONY : utils/ft_sort_five.c.o
+
+utils/ft_sort_five.i: utils/ft_sort_five.c.i
+
+.PHONY : utils/ft_sort_five.i
+
+# target to preprocess a source file
+utils/ft_sort_five.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort_five.c.i
+.PHONY : utils/ft_sort_five.c.i
+
+utils/ft_sort_five.s: utils/ft_sort_five.c.s
+
+.PHONY : utils/ft_sort_five.s
+
+# target to generate assembly for a file
+utils/ft_sort_five.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort_five.c.s
+.PHONY : utils/ft_sort_five.c.s
 
 utils/ft_utils1.o: utils/ft_utils1.c.o
 
@@ -286,15 +313,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push_swap"
+	@echo "... init_stack.o"
+	@echo "... init_stack.i"
+	@echo "... init_stack.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
-	@echo "... stack.o"
-	@echo "... stack.i"
-	@echo "... stack.s"
 	@echo "... utils/ft_clean.o"
 	@echo "... utils/ft_clean.i"
 	@echo "... utils/ft_clean.s"
+	@echo "... utils/ft_sort_five.o"
+	@echo "... utils/ft_sort_five.i"
+	@echo "... utils/ft_sort_five.s"
 	@echo "... utils/ft_utils1.o"
 	@echo "... utils/ft_utils1.i"
 	@echo "... utils/ft_utils1.s"
