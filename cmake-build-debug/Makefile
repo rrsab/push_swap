@@ -142,33 +142,6 @@ push_swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
-init_stack.o: init_stack.c.o
-
-.PHONY : init_stack.o
-
-# target to build an object file
-init_stack.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.o
-.PHONY : init_stack.c.o
-
-init_stack.i: init_stack.c.i
-
-.PHONY : init_stack.i
-
-# target to preprocess a source file
-init_stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.i
-.PHONY : init_stack.c.i
-
-init_stack.s: init_stack.c.s
-
-.PHONY : init_stack.s
-
-# target to generate assembly for a file
-init_stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_stack.c.s
-.PHONY : init_stack.c.s
-
 push_swap.o: push_swap.c.o
 
 .PHONY : push_swap.o
@@ -195,6 +168,114 @@ push_swap.s: push_swap.c.s
 push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.s
 .PHONY : push_swap.c.s
+
+stack_init.o: stack_init.c.o
+
+.PHONY : stack_init.o
+
+# target to build an object file
+stack_init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack_init.c.o
+.PHONY : stack_init.c.o
+
+stack_init.i: stack_init.c.i
+
+.PHONY : stack_init.i
+
+# target to preprocess a source file
+stack_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack_init.c.i
+.PHONY : stack_init.c.i
+
+stack_init.s: stack_init.c.s
+
+.PHONY : stack_init.s
+
+# target to generate assembly for a file
+stack_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/stack_init.c.s
+.PHONY : stack_init.c.s
+
+utils/ft_actions1.o: utils/ft_actions1.c.o
+
+.PHONY : utils/ft_actions1.o
+
+# target to build an object file
+utils/ft_actions1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions1.c.o
+.PHONY : utils/ft_actions1.c.o
+
+utils/ft_actions1.i: utils/ft_actions1.c.i
+
+.PHONY : utils/ft_actions1.i
+
+# target to preprocess a source file
+utils/ft_actions1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions1.c.i
+.PHONY : utils/ft_actions1.c.i
+
+utils/ft_actions1.s: utils/ft_actions1.c.s
+
+.PHONY : utils/ft_actions1.s
+
+# target to generate assembly for a file
+utils/ft_actions1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions1.c.s
+.PHONY : utils/ft_actions1.c.s
+
+utils/ft_actions2.o: utils/ft_actions2.c.o
+
+.PHONY : utils/ft_actions2.o
+
+# target to build an object file
+utils/ft_actions2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions2.c.o
+.PHONY : utils/ft_actions2.c.o
+
+utils/ft_actions2.i: utils/ft_actions2.c.i
+
+.PHONY : utils/ft_actions2.i
+
+# target to preprocess a source file
+utils/ft_actions2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions2.c.i
+.PHONY : utils/ft_actions2.c.i
+
+utils/ft_actions2.s: utils/ft_actions2.c.s
+
+.PHONY : utils/ft_actions2.s
+
+# target to generate assembly for a file
+utils/ft_actions2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions2.c.s
+.PHONY : utils/ft_actions2.c.s
+
+utils/ft_actions3.o: utils/ft_actions3.c.o
+
+.PHONY : utils/ft_actions3.o
+
+# target to build an object file
+utils/ft_actions3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions3.c.o
+.PHONY : utils/ft_actions3.c.o
+
+utils/ft_actions3.i: utils/ft_actions3.c.i
+
+.PHONY : utils/ft_actions3.i
+
+# target to preprocess a source file
+utils/ft_actions3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions3.c.i
+.PHONY : utils/ft_actions3.c.i
+
+utils/ft_actions3.s: utils/ft_actions3.c.s
+
+.PHONY : utils/ft_actions3.s
+
+# target to generate assembly for a file
+utils/ft_actions3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_actions3.c.s
+.PHONY : utils/ft_actions3.c.s
 
 utils/ft_clean.o: utils/ft_clean.c.o
 
@@ -313,12 +394,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push_swap"
-	@echo "... init_stack.o"
-	@echo "... init_stack.i"
-	@echo "... init_stack.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
+	@echo "... stack_init.o"
+	@echo "... stack_init.i"
+	@echo "... stack_init.s"
+	@echo "... utils/ft_actions1.o"
+	@echo "... utils/ft_actions1.i"
+	@echo "... utils/ft_actions1.s"
+	@echo "... utils/ft_actions2.o"
+	@echo "... utils/ft_actions2.i"
+	@echo "... utils/ft_actions2.s"
+	@echo "... utils/ft_actions3.o"
+	@echo "... utils/ft_actions3.i"
+	@echo "... utils/ft_actions3.s"
 	@echo "... utils/ft_clean.o"
 	@echo "... utils/ft_clean.i"
 	@echo "... utils/ft_clean.s"

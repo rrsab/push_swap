@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 		start_tag = (heap.a);
 		ft_sort_list(&start_tag);
 		ft_list_sum(start_tag, &heap);
-		if (heap.max == 5)
+		if (heap.max <= 5)
 			ft_sort_five_list(&heap);
 //		нужно написать функции ft_list_sort
 //		tag_list

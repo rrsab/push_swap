@@ -78,13 +78,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/salyce/CLionProjects/push_swap/init_stack.c">
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/push_swap.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/push_swap.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/stack_init.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_actions1.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_actions2.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_clean.c">

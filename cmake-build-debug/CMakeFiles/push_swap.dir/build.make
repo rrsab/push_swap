@@ -89,9 +89,22 @@ CMakeFiles/push_swap.dir/push_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/push_swap.c -o CMakeFiles/push_swap.dir/push_swap.c.s
 
+CMakeFiles/push_swap.dir/stack_init.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/stack_init.c.o: ../stack_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push_swap.dir/stack_init.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/stack_init.c.o -c /Users/salyce/CLionProjects/push_swap/stack_init.c
+
+CMakeFiles/push_swap.dir/stack_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/stack_init.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/salyce/CLionProjects/push_swap/stack_init.c > CMakeFiles/push_swap.dir/stack_init.c.i
+
+CMakeFiles/push_swap.dir/stack_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/stack_init.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/stack_init.c -o CMakeFiles/push_swap.dir/stack_init.c.s
+
 CMakeFiles/push_swap.dir/utils/ft_clean.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/utils/ft_clean.c.o: ../utils/ft_clean.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_clean.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_clean.c
 
 CMakeFiles/push_swap.dir/utils/ft_clean.c.i: cmake_force
@@ -104,7 +117,7 @@ CMakeFiles/push_swap.dir/utils/ft_clean.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/utils/ft_utils1.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/utils/ft_utils1.c.o: ../utils/ft_utils1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_utils1.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_utils1.c
 
 CMakeFiles/push_swap.dir/utils/ft_utils1.c.i: cmake_force
@@ -117,7 +130,7 @@ CMakeFiles/push_swap.dir/utils/ft_utils1.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/utils/ft_utils2.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/utils/ft_utils2.c.o: ../utils/ft_utils2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_utils2.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_utils2.c
 
 CMakeFiles/push_swap.dir/utils/ft_utils2.c.i: cmake_force
@@ -127,19 +140,6 @@ CMakeFiles/push_swap.dir/utils/ft_utils2.c.i: cmake_force
 CMakeFiles/push_swap.dir/utils/ft_utils2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/utils/ft_utils2.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/utils/ft_utils2.c -o CMakeFiles/push_swap.dir/utils/ft_utils2.c.s
-
-CMakeFiles/push_swap.dir/init_stack.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/init_stack.c.o: ../init_stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/push_swap.dir/init_stack.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/init_stack.c.o -c /Users/salyce/CLionProjects/push_swap/init_stack.c
-
-CMakeFiles/push_swap.dir/init_stack.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/init_stack.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/salyce/CLionProjects/push_swap/init_stack.c > CMakeFiles/push_swap.dir/init_stack.c.i
-
-CMakeFiles/push_swap.dir/init_stack.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/init_stack.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/init_stack.c -o CMakeFiles/push_swap.dir/init_stack.c.s
 
 CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o: ../utils/ft_sort_five.c
@@ -154,27 +154,72 @@ CMakeFiles/push_swap.dir/utils/ft_sort_five.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/utils/ft_sort_five.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c -o CMakeFiles/push_swap.dir/utils/ft_sort_five.c.s
 
+CMakeFiles/push_swap.dir/utils/ft_actions1.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/utils/ft_actions1.c.o: ../utils/ft_actions1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap.dir/utils/ft_actions1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_actions1.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_actions1.c
+
+CMakeFiles/push_swap.dir/utils/ft_actions1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/utils/ft_actions1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/salyce/CLionProjects/push_swap/utils/ft_actions1.c > CMakeFiles/push_swap.dir/utils/ft_actions1.c.i
+
+CMakeFiles/push_swap.dir/utils/ft_actions1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/utils/ft_actions1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/utils/ft_actions1.c -o CMakeFiles/push_swap.dir/utils/ft_actions1.c.s
+
+CMakeFiles/push_swap.dir/utils/ft_actions2.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/utils/ft_actions2.c.o: ../utils/ft_actions2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push_swap.dir/utils/ft_actions2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_actions2.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_actions2.c
+
+CMakeFiles/push_swap.dir/utils/ft_actions2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/utils/ft_actions2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/salyce/CLionProjects/push_swap/utils/ft_actions2.c > CMakeFiles/push_swap.dir/utils/ft_actions2.c.i
+
+CMakeFiles/push_swap.dir/utils/ft_actions2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/utils/ft_actions2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/utils/ft_actions2.c -o CMakeFiles/push_swap.dir/utils/ft_actions2.c.s
+
+CMakeFiles/push_swap.dir/utils/ft_actions3.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/utils/ft_actions3.c.o: ../utils/ft_actions3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/push_swap.dir/utils/ft_actions3.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/utils/ft_actions3.c.o -c /Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c
+
+CMakeFiles/push_swap.dir/utils/ft_actions3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/utils/ft_actions3.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c > CMakeFiles/push_swap.dir/utils/ft_actions3.c.i
+
+CMakeFiles/push_swap.dir/utils/ft_actions3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/utils/ft_actions3.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c -o CMakeFiles/push_swap.dir/utils/ft_actions3.c.s
+
 # Object files for target push_swap
 push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/push_swap.c.o" \
+"CMakeFiles/push_swap.dir/stack_init.c.o" \
 "CMakeFiles/push_swap.dir/utils/ft_clean.c.o" \
 "CMakeFiles/push_swap.dir/utils/ft_utils1.c.o" \
 "CMakeFiles/push_swap.dir/utils/ft_utils2.c.o" \
-"CMakeFiles/push_swap.dir/init_stack.c.o" \
-"CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o"
+"CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o" \
+"CMakeFiles/push_swap.dir/utils/ft_actions1.c.o" \
+"CMakeFiles/push_swap.dir/utils/ft_actions2.c.o" \
+"CMakeFiles/push_swap.dir/utils/ft_actions3.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
 
 push_swap: CMakeFiles/push_swap.dir/push_swap.c.o
+push_swap: CMakeFiles/push_swap.dir/stack_init.c.o
 push_swap: CMakeFiles/push_swap.dir/utils/ft_clean.c.o
 push_swap: CMakeFiles/push_swap.dir/utils/ft_utils1.c.o
 push_swap: CMakeFiles/push_swap.dir/utils/ft_utils2.c.o
-push_swap: CMakeFiles/push_swap.dir/init_stack.c.o
 push_swap: CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o
+push_swap: CMakeFiles/push_swap.dir/utils/ft_actions1.c.o
+push_swap: CMakeFiles/push_swap.dir/utils/ft_actions2.c.o
+push_swap: CMakeFiles/push_swap.dir/utils/ft_actions3.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

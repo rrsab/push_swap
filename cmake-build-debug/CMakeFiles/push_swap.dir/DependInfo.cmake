@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/salyce/CLionProjects/push_swap/init_stack.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/init_stack.c.o"
   "/Users/salyce/CLionProjects/push_swap/push_swap.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
+  "/Users/salyce/CLionProjects/push_swap/stack_init.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/stack_init.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_actions1.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_actions1.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_actions2.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_actions2.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_actions3.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_clean.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_utils1.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
