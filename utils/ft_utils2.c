@@ -62,7 +62,7 @@ void	ft_list_sum(pst_list *start, t_heap *heap)
 	i = 0;
 	while (start)
 	{
-		start->index = i++;
+		start->ind = i++;
 		start = start->next_sort;
 	}
 	heap->max = i;

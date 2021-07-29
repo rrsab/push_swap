@@ -14,7 +14,7 @@ void ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap)
 	elem->next = NULL;
 	elem->next_sort = NULL;
 	elem->value = value;
-	elem->index = tag;
+	elem->ind = tag;
 	if (last == NULL)
 	{
 		*stack = elem;

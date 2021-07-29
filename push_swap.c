@@ -27,6 +27,22 @@ void ft_read_argv(int argc, char **argv, t_heap *heap)
 		}
 	}
 }
+void	ft_print(t_heap *heap)
+{
+	pst_list	*start_tag;
+
+	start_tag = (heap->a);
+	printf("\nheap.a = %p max = %d \n", heap->a, heap->max);
+	while (start_tag)
+	{
+		printf("heap.a = %10d ", start_tag->value);
+		printf(" heap.a = %10p ", start_tag);
+		printf(" heap.a.next = %16p ", start_tag->next);
+		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
+		printf(" heap.a.ind = %10d \n", start_tag->ind);
+		start_tag = start_tag->next;
+	}
+}
 
 int main(int argc, char **argv)
 {
@@ -54,17 +70,18 @@ int main(int argc, char **argv)
 	start_tag = (heap.a);
 	//tmp = argv;
 
+	ft_print(&heap);
 
-	printf("heap.a = %p \n", heap.a);
-	while (start_tag)
-	{
-		printf("heap.a = %10d ", start_tag->value);
-		printf(" heap.a = %10p ", start_tag);
-		printf(" heap.a.next = %16p ", start_tag->next);
-		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
-		printf(" heap.a.index = %10d \n", start_tag->index);
-		start_tag = start_tag->next;
-	}
+//	printf("\nheap.a = %p max = %d \n", heap.a, heap.max);
+//	while (start_tag)
+//	{
+//		printf("heap.a = %10d ", start_tag->value);
+//		printf(" heap.a = %10p ", start_tag);
+//		printf(" heap.a.next = %16p ", start_tag->next);
+//		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
+//		printf(" heap.a.ind = %10d \n", start_tag->ind);
+//		start_tag = start_tag->next;
+//	}
 	//printf("heap.a = %d \n", start_tag->value);
 	ft_clear_all(&heap);
 	start_tag = NULL;

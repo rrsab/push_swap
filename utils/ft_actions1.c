@@ -67,6 +67,6 @@ void	ft_rotate_a_b(t_heap *heap)
 {
 	ft_put_top_to_bottom(&(heap->a));
 	ft_put_top_to_bottom(&(heap->b));
-	ft_putstr_fd("rr", 1);
+	ft_putstr_fd("rr\n", 1);
 }
 

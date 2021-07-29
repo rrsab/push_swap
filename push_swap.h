@@ -13,7 +13,7 @@
 typedef struct pss_list
 {
 	int				value;
-	int				index;
+	int				ind;
 	int 			keep;
 	struct pss_list	*next;
 	struct pss_list	*next_sort;
@@ -32,6 +32,8 @@ typedef struct s_heap
 	pst_list			*temp;
 	int 			action_count;
 }					t_heap;
+
+void	ft_print(t_heap *heap);
 
 void	ft_clear_all(t_heap *heap);
 void	ft_read_argv(int argc, char **argv, t_heap *heap);
@@ -63,5 +65,6 @@ void	ft_rotate_b(t_heap *heap);
 void	ft_rotate_a_b(t_heap *heap);
 void	ft_sort_three_list(t_heap *heap);
 void	ft_sort_five_list(t_heap *heap);
+void	ft_sort_four_list(t_heap *heap);
 
 #endif
