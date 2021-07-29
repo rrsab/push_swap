@@ -47,7 +47,7 @@ void	ft_sort_list(pst_list **start_list);
 void	ft_swap_list(pst_list **prevnext, pst_list *last);
 void	ft_list_sum(pst_list *start, t_heap *heap);
 int		ft_find_tag(pst_list *list, int tag);
-void	ft_sort_five_list(t_heap *mem);
+
 void	ft_swap(pst_list **stack);
 void	ft_push_x1_in_x2(pst_list **x1, pst_list **x2);
 void	ft_swap_a(t_heap *heap);
@@ -63,8 +63,8 @@ void	ft_rev_rotate_a_b(t_heap *heap);
 void	ft_rotate_a(t_heap *heap);
 void	ft_rotate_b(t_heap *heap);
 void	ft_rotate_a_b(t_heap *heap);
-void	ft_sort_three_list(t_heap *heap);
+void	ft_sort_three_list(int m, t_heap *heap);
 void	ft_sort_five_list(t_heap *heap);
-void	ft_sort_four_list(t_heap *heap);
+void	ft_sort_four_list(int m, t_heap *heap);
 
 #endif
