@@ -70,7 +70,7 @@ int main(int argc, char **argv)
 	start_tag = (heap.a);
 	//tmp = argv;
 
-	ft_print(&heap);
+	//ft_print(&heap);
 
 //	printf("\nheap.a = %p max = %d \n", heap.a, heap.max);
 //	while (start_tag)

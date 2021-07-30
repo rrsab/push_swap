@@ -24,11 +24,14 @@ void	ft_sort_three_list(int m, t_heap *heap)
 	else if (a->ind == 1 + m && a->next->ind == 0 + m && a->next->next->ind
 	== 2 + m)
 		ft_swap_a(heap);
-	else if (a->ind == 1 + m && a->next->ind == 2 + m && a->next->next->ind == 0 + m)
+	else if (a->ind == 1 + m && a->next->ind == 2 + m && a->next->next->ind ==
+		0 + m)
 		ft_rev_rotate_a(heap);
-	else if (a->ind == 2 + m && a->next->ind == 0 + m && a->next->next->ind	== 1 + m)
+	else if (a->ind == 2 + m && a->next->ind == 0 + m && a->next->next->ind	==
+		1 + m)
 		ft_rotate_a(heap);
-	else if (a->ind == 2 + m && a->next->ind == 1 + m && a->next->next->ind	== 0 + m)
+	else if (a->ind == 2 + m && a->next->ind == 1 + m && a->next->next->ind	==
+		0 + m)
 	{
 		ft_swap_a(heap);
 		ft_rev_rotate_a(heap);

@@ -304,6 +304,33 @@ utils/ft_clean.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_clean.c.s
 .PHONY : utils/ft_clean.c.s
 
+utils/ft_sort1.o: utils/ft_sort1.c.o
+
+.PHONY : utils/ft_sort1.o
+
+# target to build an object file
+utils/ft_sort1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort1.c.o
+.PHONY : utils/ft_sort1.c.o
+
+utils/ft_sort1.i: utils/ft_sort1.c.i
+
+.PHONY : utils/ft_sort1.i
+
+# target to preprocess a source file
+utils/ft_sort1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort1.c.i
+.PHONY : utils/ft_sort1.c.i
+
+utils/ft_sort1.s: utils/ft_sort1.c.s
+
+.PHONY : utils/ft_sort1.s
+
+# target to generate assembly for a file
+utils/ft_sort1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort1.c.s
+.PHONY : utils/ft_sort1.c.s
+
 utils/ft_sort_five.o: utils/ft_sort_five.c.o
 
 .PHONY : utils/ft_sort_five.o
@@ -412,6 +439,9 @@ help:
 	@echo "... utils/ft_clean.o"
 	@echo "... utils/ft_clean.i"
 	@echo "... utils/ft_clean.s"
+	@echo "... utils/ft_sort1.o"
+	@echo "... utils/ft_sort1.i"
+	@echo "... utils/ft_sort1.s"
 	@echo "... utils/ft_sort_five.o"
 	@echo "... utils/ft_sort_five.i"
 	@echo "... utils/ft_sort_five.s"
