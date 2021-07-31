@@ -102,6 +102,9 @@
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort1.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort2.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c">
 			<Option target="push_swap"/>
 		</Unit>
@@ -109,6 +112,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_utils2.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_utils3.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/CMakeLists.txt">

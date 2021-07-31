@@ -32,7 +32,10 @@ void	ft_print(t_heap *heap)
 	pst_list	*start_tag;
 
 	start_tag = (heap->a);
-	printf("\nheap.a = %p max = %d \n", heap->a, heap->max);
+	printf("\nheap.a = %p max = %d heap.big = %d\n", heap->a, heap->max,
+		   heap->big);
+	printf("\nheap.group_cnt = %d heap.group_sz = %d \n", heap->group_cnt,
+		   heap->group_sz);
 	while (start_tag)
 	{
 		printf("heap.a = %10d ", start_tag->value);
@@ -64,13 +67,14 @@ int main(int argc, char **argv)
 		ft_list_sum(start_tag, &heap);
 		if (heap.max <= 5)
 			ft_sort_five_list(&heap);
+		ft_main_sort(&heap, 1);
 //		нужно написать функции ft_list_sort
 //		tag_list
 	}
 	start_tag = (heap.a);
 	//tmp = argv;
 
-	//ft_print(&heap);
+	ft_print(&heap);
 
 //	printf("\nheap.a = %p max = %d \n", heap.a, heap.max);
 //	while (start_tag)

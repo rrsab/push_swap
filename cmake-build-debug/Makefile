@@ -331,6 +331,33 @@ utils/ft_sort1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort1.c.s
 .PHONY : utils/ft_sort1.c.s
 
+utils/ft_sort2.o: utils/ft_sort2.c.o
+
+.PHONY : utils/ft_sort2.o
+
+# target to build an object file
+utils/ft_sort2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort2.c.o
+.PHONY : utils/ft_sort2.c.o
+
+utils/ft_sort2.i: utils/ft_sort2.c.i
+
+.PHONY : utils/ft_sort2.i
+
+# target to preprocess a source file
+utils/ft_sort2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort2.c.i
+.PHONY : utils/ft_sort2.c.i
+
+utils/ft_sort2.s: utils/ft_sort2.c.s
+
+.PHONY : utils/ft_sort2.s
+
+# target to generate assembly for a file
+utils/ft_sort2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_sort2.c.s
+.PHONY : utils/ft_sort2.c.s
+
 utils/ft_sort_five.o: utils/ft_sort_five.c.o
 
 .PHONY : utils/ft_sort_five.o
@@ -412,6 +439,33 @@ utils/ft_utils2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils2.c.s
 .PHONY : utils/ft_utils2.c.s
 
+utils/ft_utils3.o: utils/ft_utils3.c.o
+
+.PHONY : utils/ft_utils3.o
+
+# target to build an object file
+utils/ft_utils3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils3.c.o
+.PHONY : utils/ft_utils3.c.o
+
+utils/ft_utils3.i: utils/ft_utils3.c.i
+
+.PHONY : utils/ft_utils3.i
+
+# target to preprocess a source file
+utils/ft_utils3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils3.c.i
+.PHONY : utils/ft_utils3.c.i
+
+utils/ft_utils3.s: utils/ft_utils3.c.s
+
+.PHONY : utils/ft_utils3.s
+
+# target to generate assembly for a file
+utils/ft_utils3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils/ft_utils3.c.s
+.PHONY : utils/ft_utils3.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -442,6 +496,9 @@ help:
 	@echo "... utils/ft_sort1.o"
 	@echo "... utils/ft_sort1.i"
 	@echo "... utils/ft_sort1.s"
+	@echo "... utils/ft_sort2.o"
+	@echo "... utils/ft_sort2.i"
+	@echo "... utils/ft_sort2.s"
 	@echo "... utils/ft_sort_five.o"
 	@echo "... utils/ft_sort_five.i"
 	@echo "... utils/ft_sort_five.s"
@@ -451,6 +508,9 @@ help:
 	@echo "... utils/ft_utils2.o"
 	@echo "... utils/ft_utils2.i"
 	@echo "... utils/ft_utils2.s"
+	@echo "... utils/ft_utils3.o"
+	@echo "... utils/ft_utils3.i"
+	@echo "... utils/ft_utils3.s"
 .PHONY : help
 
 

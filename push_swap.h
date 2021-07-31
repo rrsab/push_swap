@@ -67,4 +67,17 @@ void	ft_sort_three_list(int m, t_heap *heap);
 void	ft_sort_five_list(t_heap *heap);
 void	ft_sort_four_list(int m, t_heap *heap);
 
+//global sort
+
+int			ft_loop_list(pst_list *list, pst_list *start, int set);
+int			ft_find_biggest_loop(pst_list *start, int set);
+int		 	ft_list_size(pst_list *l);
+int			ft_max(int a, int b);
+void		ft_init_sort(t_heap *heap);
+void		ft_main_sort(t_heap *heap, int cur_group);
+int			ft_abs(int a);
+int			ft_min(int a, int b);
+pst_list	*ft_closest_in_group(pst_list *list, int cur_group, int group_sz);
+
+
 #endif

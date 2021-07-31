@@ -6,9 +6,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/utils/ft_actions3.c.o"
   "CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
   "CMakeFiles/push_swap.dir/utils/ft_sort1.c.o"
+  "CMakeFiles/push_swap.dir/utils/ft_sort2.c.o"
   "CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o"
   "CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
   "CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
+  "CMakeFiles/push_swap.dir/utils/ft_utils3.c.o"
   "push_swap"
   "push_swap.pdb"
 )

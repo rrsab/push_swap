@@ -11,9 +11,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/salyce/CLionProjects/push_swap/utils/ft_actions3.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_actions3.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_clean.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_clean.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_sort1.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_sort1.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_sort2.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_sort2.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_sort_five.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_utils1.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils1.c.o"
   "/Users/salyce/CLionProjects/push_swap/utils/ft_utils2.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils2.c.o"
+  "/Users/salyce/CLionProjects/push_swap/utils/ft_utils3.c" "/Users/salyce/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/utils/ft_utils3.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
