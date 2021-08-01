@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/01 22:08:50 by salyce            #+#    #+#             */
+/*   Updated: 2021/08/01 22:08:52 by salyce           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void ft_read_argv(int argc, char **argv, t_heap *heap)
+void	ft_read_argv(int argc, char **argv, t_heap *heap)
 {
 	int	i;
 	int	j;
-	int prev_space;
+	int	prev_space;
 
 	i = 0;
 	prev_space = 1;
@@ -14,22 +26,23 @@ void ft_read_argv(int argc, char **argv, t_heap *heap)
 		j = -1;
 		while (argv[i][++j])
 		{
-			if(argv[i][j] != '+' && argv[i][j] != '-' && argv[i][j] != ' '
+			if (argv[i][j] != '+' && argv[i][j] != '-' && argv[i][j] != ' '
 				&& !ft_isdigit(argv[i][j]))
 				ft_exit_error(heap);
 			if (prev_space == 1 && argv[i][j] != ' ')
 			{
 				ft_stack_init(&(heap->a), ft_atoi_new(argv[i] + j, heap), -1,
-							  heap);
+					heap);
 				prev_space = 0;
 			}
 			prev_space = argv[i][j] == ' ';
 		}
 	}
 }
+
 void	ft_print(t_heap *heap)
 {
-	pst_list	*start_tag;
+	t_pslist	*start_tag;
 
 	start_tag = (heap->a);
 	printf("\nheap.a = %p max = %d heap.big = %d\n", heap->a, heap->max,
@@ -47,11 +60,10 @@ void	ft_print(t_heap *heap)
 	}
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_heap		heap;
-	pst_list	*start_tag;
-//	char 	**tmp;
+	t_pslist	*start_tag;
 
 	heap.a = NULL;
 	heap.b = NULL;
@@ -59,7 +71,6 @@ int main(int argc, char **argv)
 	if (argc <= 1)
 		exit(EXIT_SUCCESS);
 	ft_read_argv(argc, argv, &heap);
-
 	if (!ft_check_sort(&heap))
 	{
 		start_tag = (heap.a);
@@ -70,11 +81,7 @@ int main(int argc, char **argv)
 		else
 			ft_main_sort(&heap, 1);
 	}
-
-//	start_tag = (heap.a);
-//	ft_print(&heap);
-
 	ft_clear_all(&heap);
 	start_tag = NULL;
-	return 0;
+	return (0);
 }

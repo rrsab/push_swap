@@ -12,7 +12,7 @@
 
 #include "../push_swap.h"
 
-int	ft_distance_to_top(pst_list *a, int tag)
+int	ft_distance_to_top(t_pslist *a, int tag)
 {
 	int	i;
 	int	size;
@@ -31,10 +31,10 @@ int	ft_distance_to_top(pst_list *a, int tag)
 	return (i);
 }
 
-pst_list	*ft_closest_in_group(pst_list *list, int cur_group, int group_sz)
+t_pslist	*ft_closest_in_group(t_pslist *list, int cur_group, int group_sz)
 {
-	pst_list	*closest;
-	pst_list	*cur;
+	t_pslist	*closest;
+	t_pslist	*cur;
 	int			distance;
 	int			cur_dist;
 
@@ -59,10 +59,10 @@ pst_list	*ft_closest_in_group(pst_list *list, int cur_group, int group_sz)
 	return (closest);
 }
 
-int	ft_can_swap(pst_list *list)
+int	ft_can_swap(t_pslist *list)
 {
-	pst_list	l1;
-	pst_list	l2;
+	t_pslist	l1;
+	t_pslist	l2;
 	int			count1;
 	int			count2;
 

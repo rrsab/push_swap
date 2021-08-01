@@ -12,7 +12,7 @@
 
 #include "../push_swap.h"
 
-int	ft_find_tag(pst_list *list, int tag)
+int	ft_find_tag(t_pslist *list, int tag)
 {
 	while (list)
 	{
@@ -25,7 +25,7 @@ int	ft_find_tag(pst_list *list, int tag)
 
 void	ft_sort_three_list(int m, t_heap *heap)
 {
-	pst_list	*a;
+	t_pslist	*a;
 
 	a = heap->a;
 	if (a->ind == 0 + m && a->next->ind == 2 + m && a->next->next->ind == 1 + m)
@@ -52,7 +52,7 @@ void	ft_sort_three_list(int m, t_heap *heap)
 
 void	ft_sort_four_list(int m, t_heap *heap)
 {
-	pst_list	*a;
+	t_pslist	*a;
 
 	a = heap->a;
 	if (a->next->ind == 0 + m)
@@ -74,7 +74,7 @@ void	ft_sort_four_list(int m, t_heap *heap)
 
 static void	ft_sort_tofive_list(t_heap *heap)
 {
-	pst_list	*a;
+	t_pslist	*a;
 
 	a = heap->a;
 	if (a->next->ind == 0)

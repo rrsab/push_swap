@@ -19,10 +19,10 @@ int	ft_distance_to_tag(int tag, int size)
 	return (tag);
 }
 
-int	ft_insert_distance(pst_list *list, int t, int size)
+int	ft_insert_distance(t_pslist *list, int t, int size)
 {
-	pst_list	*p;
-	pst_list	*c;
+	t_pslist	*p;
+	t_pslist	*c;
 	int			c_max[2];
 	int			i;
 

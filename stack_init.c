@@ -12,15 +12,15 @@
 
 #include "push_swap.h"
 
-void	ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap)
+void	ft_stack_init(t_pslist **stack, int value, int tag, t_heap *heap)
 {
-	pst_list	*elem;
-	pst_list	*last;
+	t_pslist	*elem;
+	t_pslist	*last;
 
 	last = *stack;
 	if (ft_list_dubl_value(*stack, value))
 		ft_exit_error(heap);
-	elem = (pst_list *)malloc(sizeof(pst_list));
+	elem = (t_pslist *)malloc(sizeof(t_pslist));
 	if (!elem)
 		ft_exit_error(heap);
 	elem->next = NULL;

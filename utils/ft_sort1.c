@@ -12,9 +12,9 @@
 
 #include "../push_swap.h"
 
-int	ft_loop_list(pst_list *list, pst_list *start1, int set)
+int	ft_loop_list(t_pslist *list, t_pslist *start1, int set)
 {
-	pst_list	*loop;
+	t_pslist	*loop;
 	int			max_tag;
 	int			count;
 
@@ -41,12 +41,12 @@ int	ft_loop_list(pst_list *list, pst_list *start1, int set)
 	return (count);
 }
 
-int	ft_find_biggest_loop(pst_list *start, int set)
+int	ft_find_biggest_loop(t_pslist *start, int set)
 {
-	pst_list	*l;
+	t_pslist	*l;
 	int			max;
 	int			count;
-	pst_list	*max_keep;
+	t_pslist	*max_keep;
 
 	max = 0;
 	l = start;
@@ -65,7 +65,7 @@ int	ft_find_biggest_loop(pst_list *start, int set)
 	return (max);
 }
 
-int	ft_list_size(pst_list *l)
+int	ft_list_size(t_pslist *l)
 {
 	int	i;
 

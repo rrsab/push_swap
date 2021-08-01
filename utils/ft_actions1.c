@@ -12,10 +12,10 @@
 
 #include "../push_swap.h"
 
-void	ft_swap(pst_list **stack)
+void	ft_swap(t_pslist **stack)
 {
-	pst_list	*temp;
-	pst_list	*next_list;
+	t_pslist	*temp;
+	t_pslist	*next_list;
 
 	if (!*stack || !(*stack)->next)
 		return ;
@@ -26,9 +26,9 @@ void	ft_swap(pst_list **stack)
 	temp->next = next_list;
 }
 
-void	ft_push_x1_in_x2(pst_list **x1, pst_list **x2)
+void	ft_push_x1_in_x2(t_pslist **x1, t_pslist **x2)
 {
-	pst_list	*tmp;
+	t_pslist	*tmp;
 
 	if (!*x1)
 		return ;
@@ -41,10 +41,10 @@ void	ft_push_x1_in_x2(pst_list **x1, pst_list **x2)
 	*x2 = tmp;
 }
 
-void	ft_put_top_to_bottom(pst_list **x)
+void	ft_put_top_to_bottom(t_pslist **x)
 {
-	pst_list	*top;
-	pst_list	*tmp;
+	t_pslist	*top;
+	t_pslist	*tmp;
 
 	if (!*x || !(*x)->next)
 		return ;
@@ -57,10 +57,10 @@ void	ft_put_top_to_bottom(pst_list **x)
 	top->next = NULL;
 }
 
-void	ft_put_bottom_to_top(pst_list **x)
+void	ft_put_bottom_to_top(t_pslist **x)
 {
-	pst_list	*last;
-	pst_list	*prev;
+	t_pslist	*last;
+	t_pslist	*prev;
 
 	if (!*x || !(*x)->next)
 		return ;

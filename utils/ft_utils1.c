@@ -12,10 +12,10 @@
 
 #include "../push_swap.h"
 
-void	ft_free_list(pst_list **list)
+void	ft_free_list(t_pslist **list)
 {
-	pst_list	*l;
-	pst_list	*next;
+	t_pslist	*l;
+	t_pslist	*next;
 
 	l = *list;
 	while (l)
@@ -27,7 +27,7 @@ void	ft_free_list(pst_list **list)
 	*list = NULL;
 }
 
-int	ft_list_dubl_value(pst_list *l, int value)
+int	ft_list_dubl_value(t_pslist *l, int value)
 {
 	while (l)
 	{

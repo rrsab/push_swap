@@ -33,7 +33,7 @@ int	ft_abs(int a)
 	return (a);
 }
 
-pst_list	*ft_get_last(pst_list *l)
+t_pslist	*ft_get_last(t_pslist *l)
 {
 	if (l == NULL)
 		return (NULL);

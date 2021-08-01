@@ -15,7 +15,7 @@
 int	ft_check_sort(t_heap *m)
 {
 	int			prev;
-	pst_list	*l;
+	t_pslist	*l;
 
 	if (!m->a)
 		return (1);
@@ -31,9 +31,9 @@ int	ft_check_sort(t_heap *m)
 	return (1);
 }
 
-void	ft_swap_list(pst_list **prevnext, pst_list *last)
+void	ft_swap_list(t_pslist **prevnext, t_pslist *last)
 {
-	pst_list	*swap;
+	t_pslist	*swap;
 
 	swap = *prevnext;
 	*prevnext = last->next_sort;
@@ -41,10 +41,10 @@ void	ft_swap_list(pst_list **prevnext, pst_list *last)
 	(*prevnext)->next_sort = swap;
 }
 
-void	ft_sort_list(pst_list **start_list)
+void	ft_sort_list(t_pslist **start_list)
 {
-	pst_list	*last;
-	pst_list	*prev;
+	t_pslist	*last;
+	t_pslist	*prev;
 
 	prev = NULL;
 	last = *start_list;
@@ -67,7 +67,7 @@ void	ft_sort_list(pst_list **start_list)
 	}
 }
 
-void	ft_list_sum(pst_list *start, t_heap *heap)
+void	ft_list_sum(t_pslist *start, t_heap *heap)
 {
 	int	i;
 
