@@ -1,6 +1,18 @@
-# include "../push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_five.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/01 21:08:27 by salyce            #+#    #+#             */
+/*   Updated: 2021/08/01 21:08:31 by salyce           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int		ft_find_tag(pst_list *list, int tag)
+#include "../push_swap.h"
+
+int	ft_find_tag(pst_list *list, int tag)
 {
 	while (list)
 	{
@@ -22,21 +34,22 @@ void	ft_sort_three_list(int m, t_heap *heap)
 		ft_rotate_a(heap);
 	}
 	else if (a->ind == 1 + m && a->next->ind == 0 + m && a->next->next->ind
-	== 2 + m)
+		== 2 + m)
 		ft_swap_a(heap);
-	else if (a->ind == 1 + m && a->next->ind == 2 + m && a->next->next->ind ==
-		0 + m)
+	else if (a->ind == 1 + m && a->next->ind == 2 + m && a->next->next->ind
+		== 0 + m)
 		ft_rev_rotate_a(heap);
-	else if (a->ind == 2 + m && a->next->ind == 0 + m && a->next->next->ind	==
-		1 + m)
+	else if (a->ind == 2 + m && a->next->ind == 0 + m && a->next->next->ind
+		== 1 + m)
 		ft_rotate_a(heap);
-	else if (a->ind == 2 + m && a->next->ind == 1 + m && a->next->next->ind	==
-		0 + m)
+	else if (a->ind == 2 + m && a->next->ind == 1 + m && a->next->next->ind
+		== 0 + m)
 	{
 		ft_swap_a(heap);
 		ft_rev_rotate_a(heap);
 	}
 }
+
 void	ft_sort_four_list(int m, t_heap *heap)
 {
 	pst_list	*a;
@@ -61,7 +74,7 @@ void	ft_sort_four_list(int m, t_heap *heap)
 
 static void	ft_sort_tofive_list(t_heap *heap)
 {
-	pst_list *a;
+	pst_list	*a;
 
 	a = heap->a;
 	if (a->next->ind == 0)

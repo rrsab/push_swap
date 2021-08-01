@@ -78,6 +78,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/libft/ft_isdigit.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/libft/ft_putendl_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/libft/ft_putstr_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/libft/ft_strlen.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/push_swap.c">
 			<Option target="push_swap"/>
 		</Unit>
@@ -103,6 +115,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort2.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort3.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/salyce/CLionProjects/push_swap/utils/ft_sort_five.c">

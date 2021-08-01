@@ -4,7 +4,7 @@ BONUS	= push_swap_bonus
 
 SRCS	= push_swap.c stack_init.c utils/ft_clean.c utils/ft_utils1.c utils/ft_utils2.c utils/ft_utils3.c\
 		utils/ft_sort_five.c\
-		utils/ft_sort1.c\
+		utils/ft_sort1.c utils/ft_sort2.c utils/ft_sort3.c\
 		utils/ft_actions1.c utils/ft_actions2.c utils/ft_actions3.c\
 
 

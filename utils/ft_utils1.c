@@ -1,6 +1,18 @@
-# include "../push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_utils1.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/01 21:03:37 by salyce            #+#    #+#             */
+/*   Updated: 2021/08/01 21:04:00 by salyce           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_free_list(pst_list **list)
+#include "../push_swap.h"
+
+void	ft_free_list(pst_list **list)
 {
 	pst_list	*l;
 	pst_list	*next;
@@ -50,4 +62,3 @@ int	ft_atoi_new(const char *str, t_heap *heap)
 	}
 	return (sign * result);
 }
-

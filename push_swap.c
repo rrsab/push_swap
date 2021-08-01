@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 	heap.b = NULL;
 	heap.print = 1;
 	if (argc <= 1)
-		return (write(1, "\n", 1));
+		exit(EXIT_SUCCESS);
 	ft_read_argv(argc, argv, &heap);
 
 	if (!ft_check_sort(&heap))
@@ -67,26 +67,13 @@ int main(int argc, char **argv)
 		ft_list_sum(start_tag, &heap);
 		if (heap.max <= 5)
 			ft_sort_five_list(&heap);
-		ft_main_sort(&heap, 1);
-//		нужно написать функции ft_list_sort
-//		tag_list
+		else
+			ft_main_sort(&heap, 1);
 	}
-	start_tag = (heap.a);
-	//tmp = argv;
 
-	ft_print(&heap);
+//	start_tag = (heap.a);
+//	ft_print(&heap);
 
-//	printf("\nheap.a = %p max = %d \n", heap.a, heap.max);
-//	while (start_tag)
-//	{
-//		printf("heap.a = %10d ", start_tag->value);
-//		printf(" heap.a = %10p ", start_tag);
-//		printf(" heap.a.next = %16p ", start_tag->next);
-//		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
-//		printf(" heap.a.ind = %10d \n", start_tag->ind);
-//		start_tag = start_tag->next;
-//	}
-	//printf("heap.a = %d \n", start_tag->value);
 	ft_clear_all(&heap);
 	start_tag = NULL;
 	return 0;

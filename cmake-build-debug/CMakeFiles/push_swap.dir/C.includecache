@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/salyce/CLionProjects/push_swap/libft/ft_strlen.c
+libft.h
+/Users/salyce/CLionProjects/push_swap/libft/libft.h
+
+/Users/salyce/CLionProjects/push_swap/libft/libft.h
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+stddef.h
+-
+

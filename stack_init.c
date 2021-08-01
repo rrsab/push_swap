@@ -1,6 +1,18 @@
-# include "push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stack_init.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/01 21:35:48 by salyce            #+#    #+#             */
+/*   Updated: 2021/08/01 21:35:50 by salyce           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap)
+#include "push_swap.h"
+
+void	ft_stack_init(pst_list **stack, int value, int tag, t_heap *heap)
 {
 	pst_list	*elem;
 	pst_list	*last;

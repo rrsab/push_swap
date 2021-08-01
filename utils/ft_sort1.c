@@ -1,10 +1,22 @@
-# include "../push_swap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort1.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/01 21:14:55 by salyce            #+#    #+#             */
+/*   Updated: 2021/08/01 21:14:58 by salyce           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int		ft_loop_list(pst_list *list, pst_list *start1, int set)
+#include "../push_swap.h"
+
+int	ft_loop_list(pst_list *list, pst_list *start1, int set)
 {
 	pst_list	*loop;
 	int			max_tag;
-	int 		count;
+	int			count;
 
 	max_tag = -1;
 	count = 0;
@@ -29,11 +41,11 @@ int		ft_loop_list(pst_list *list, pst_list *start1, int set)
 	return (count);
 }
 
-int		ft_find_biggest_loop(pst_list *start, int set)
+int	ft_find_biggest_loop(pst_list *start, int set)
 {
 	pst_list	*l;
-	int 		max;
-	int 		count;
+	int			max;
+	int			count;
 	pst_list	*max_keep;
 
 	max = 0;
@@ -53,7 +65,7 @@ int		ft_find_biggest_loop(pst_list *start, int set)
 	return (max);
 }
 
-int 	ft_list_size(pst_list *l)
+int	ft_list_size(pst_list *l)
 {
 	int	i;
 
@@ -79,6 +91,26 @@ void	ft_main_sort(t_heap *heap, int cur_group)
 	int	distance;
 
 	ft_init_sort(heap);
-
-	distance = cur_group;
+	while (heap->size >= heap->big && cur_group <= (heap->group_cnt + 1))
+	{
+		heap->temp = ft_closest_in_group(heap->a, cur_group, heap->group_sz);
+		if (heap->temp == NULL && ++cur_group)
+			continue ;
+		distance = ft_distance_to_top(heap->a, heap->temp->ind);
+		if (heap->a && ft_can_swap(heap->a))
+		{
+			ft_swap_a(heap);
+			heap->big = ft_find_biggest_loop(heap->a, 1);
+		}
+		else if (heap->a && !heap->a->keep && distance == 0)
+		{
+			ft_push_b(heap);
+			(heap->size)--;
+		}
+		else if (heap->group_cnt == 1)
+			ft_rotate_a_b(heap);
+		else
+			ft_rotate(heap, ft_min(1, ft_max(-1, distance)), 0);
+	}
+	ft_return_a(heap);
 }

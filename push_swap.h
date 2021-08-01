@@ -10,13 +10,13 @@
 # include <string.h>
 # include "libft/libft.h"
 
-typedef struct pss_list
+typedef struct s_pslist
 {
 	int				value;
 	int				ind;
 	int 			keep;
-	struct pss_list	*next;
-	struct pss_list	*next_sort;
+	struct s_pslist	*next;
+	struct s_pslist	*next_sort;
 }					pst_list;
 
 typedef struct s_heap
@@ -73,11 +73,18 @@ int			ft_loop_list(pst_list *list, pst_list *start, int set);
 int			ft_find_biggest_loop(pst_list *start, int set);
 int		 	ft_list_size(pst_list *l);
 int			ft_max(int a, int b);
+int			ft_min(int a, int b);
 void		ft_init_sort(t_heap *heap);
 void		ft_main_sort(t_heap *heap, int cur_group);
 int			ft_abs(int a);
-int			ft_min(int a, int b);
+int			ft_distance_to_top(pst_list *a, int tag);
 pst_list	*ft_closest_in_group(pst_list *list, int cur_group, int group_sz);
-
+int			ft_can_swap(pst_list *list);
+void		ft_double_rotate(t_heap *heap, int *rot_a, int *rot_b);
+void 		ft_rotate(t_heap *heap, int rot_a, int rot_b);
+int			ft_distance_to_tag(int tag, int size);
+pst_list	*ft_get_last(pst_list *l);
+int			ft_insert_distance(pst_list *list, int t, int size);
+void		ft_return_a(t_heap *heap);
 
 #endif
