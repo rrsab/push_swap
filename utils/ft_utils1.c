@@ -42,7 +42,7 @@ int	ft_atoi_new(const char *str, t_heap *heap)
 {
 	unsigned int	i;
 	int				sign;
-	int				result;
+	long			result;
 
 	i = 0;
 	result = 0;
@@ -55,10 +55,13 @@ int	ft_atoi_new(const char *str, t_heap *heap)
 		i++;
 	while ((str[i] >= '0') && (str[i] <= '9'))
 	{
-		if ((result < 0 && sign == -1) || (result < 0 && sign == 1))
-			ft_exit_error(heap);
 		result = result * 10 + (str[i] - '0');
+		if ((result > 2147483648 && sign == -1) || (result > 2147483647 &&
+		sign == 1))
+		{
+			ft_exit_error(heap);
+		}
 		i++;
 	}
-	return (sign * result);
+	return ((int)(sign * result));
 }

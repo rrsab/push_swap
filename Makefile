@@ -1,14 +1,9 @@
 NAME	= push_swap
 
-BONUS	= push_swap_bonus
-
 SRCS	= push_swap.c stack_init.c utils/ft_clean.c utils/ft_utils1.c utils/ft_utils2.c utils/ft_utils3.c\
 		utils/ft_sort_five.c\
 		utils/ft_sort1.c utils/ft_sort2.c utils/ft_sort3.c\
 		utils/ft_actions1.c utils/ft_actions2.c utils/ft_actions3.c\
-
-
-SRCS_B	=
 
 OBJS	= $(patsubst %.c, %.o, $(SRCS))
 
@@ -20,21 +15,13 @@ RM		= rm -f
 
 HEADER	= push_swap.h
 
-HEAD_B	=
-
 CFLAGS	= -Wall -Wextra -Werror
 
 all:		$(NAME)
 
-$(NAME):	$(SRCS)	libft/libft.a $(HEADER)
+$(NAME):	$(SRCS) $(HEADER)
 			@make -C libft
 			$(CC) $(CFLAGS) $(SRCS) libft/libft.a -o $(NAME)
-
-$(BONUS):	$(SRCS_B)	libft/libft.a $(HEAD_B)
-			@make -C libft
-			$(CC) $(CFLAGS) $(SRCS_B) libft/libft.a -o $(BONUS)
-
-bonus:		$(BONUS)
 
 clean:
 			$(RM) $(OBJS) $(OBJS_B)
@@ -45,4 +32,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean re bonus
+.PHONY:		all clean fclean re

@@ -67,7 +67,7 @@ void	ft_sort_list(t_pslist **start_list)
 	}
 }
 
-void	ft_list_sum(t_pslist *start, t_heap *heap)
+void	ft_list_ind_max(t_pslist *start, t_heap *heap)
 {
 	int	i;
 

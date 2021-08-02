@@ -40,9 +40,7 @@ typedef struct s_heap
 	int			size;
 	int			group_cnt;
 	int			group_sz;
-	int			print;
 	t_pslist	*temp;
-	int			action_count;
 }				t_heap;
 
 void		ft_print(t_heap *heap);
@@ -57,7 +55,7 @@ int			ft_atoi_new(const char *str, t_heap *heap);
 int			ft_check_sort(t_heap *m);
 void		ft_sort_list(t_pslist **start_list);
 void		ft_swap_list(t_pslist **prevnext, t_pslist *last);
-void		ft_list_sum(t_pslist *start, t_heap *heap);
+void		ft_list_ind_max(t_pslist *start, t_heap *heap);
 int			ft_find_tag(t_pslist *list, int tag);
 
 void		ft_swap(t_pslist **stack);
@@ -78,8 +76,6 @@ void		ft_rotate_a_b(t_heap *heap);
 void		ft_sort_three_list(int m, t_heap *heap);
 void		ft_sort_five_list(t_heap *heap);
 void		ft_sort_four_list(int m, t_heap *heap);
-
-//global sort
 
 int			ft_loop_list(t_pslist *list, t_pslist *start, int set);
 int			ft_find_biggest_loop(t_pslist *start, int set);

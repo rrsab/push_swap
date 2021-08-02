@@ -40,26 +40,6 @@ void	ft_read_argv(int argc, char **argv, t_heap *heap)
 	}
 }
 
-void	ft_print(t_heap *heap)
-{
-	t_pslist	*start_tag;
-
-	start_tag = (heap->a);
-	printf("\nheap.a = %p max = %d heap.big = %d\n", heap->a, heap->max,
-		   heap->big);
-	printf("\nheap.group_cnt = %d heap.group_sz = %d \n", heap->group_cnt,
-		   heap->group_sz);
-	while (start_tag)
-	{
-		printf("heap.a = %10d ", start_tag->value);
-		printf(" heap.a = %10p ", start_tag);
-		printf(" heap.a.next = %16p ", start_tag->next);
-		printf(" heap.a.next_sort = %16p", start_tag->next_sort);
-		printf(" heap.a.ind = %10d \n", start_tag->ind);
-		start_tag = start_tag->next;
-	}
-}
-
 int	main(int argc, char **argv)
 {
 	t_heap		heap;
@@ -67,7 +47,6 @@ int	main(int argc, char **argv)
 
 	heap.a = NULL;
 	heap.b = NULL;
-	heap.print = 1;
 	if (argc <= 1)
 		exit(EXIT_SUCCESS);
 	ft_read_argv(argc, argv, &heap);
@@ -75,7 +54,7 @@ int	main(int argc, char **argv)
 	{
 		start_tag = (heap.a);
 		ft_sort_list(&start_tag);
-		ft_list_sum(start_tag, &heap);
+		ft_list_ind_max(start_tag, &heap);
 		if (heap.max <= 5)
 			ft_sort_five_list(&heap);
 		else
