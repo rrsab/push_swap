@@ -82,7 +82,7 @@ void	ft_init_sort(t_heap *heap)
 {
 	heap->big = ft_find_biggest_loop(heap->a, 1);
 	heap->size = ft_list_size(heap->a);
-	heap->group_cnt = ft_max(1, (int)(heap->max / 150.0));
+	heap->group_cnt = ft_max(1, (int)(heap->max / 120.0));
 	heap->group_sz = heap->max / heap->group_cnt;
 }
 

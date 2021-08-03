@@ -29,7 +29,7 @@ int	ft_insert_distance(t_pslist *list, int t, int size)
 	i = 0;
 	p = ft_get_last(list);
 	c = list;
-	c_max[1] = 0xFFFFFFF;
+	c_max[1] = 2147483647;
 	while (c)
 	{
 		if ((p->ind > c->ind && (t < c->ind || t > p->ind))
@@ -83,7 +83,7 @@ void	ft_return_a(t_heap *heap)
 
 	while (heap->b)
 	{
-		ft_calc_b_rotation(heap, 0xFFFFFFF, &rot_a, &rot_b);
+		ft_calc_b_rotation(heap, 2147483647, &rot_a, &rot_b);
 		ft_rotate(heap, rot_a, rot_b);
 		ft_push_a(heap);
 		(heap->size)++;

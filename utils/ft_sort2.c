@@ -38,7 +38,7 @@ t_pslist	*ft_closest_in_group(t_pslist *list, int cur_group, int group_sz)
 	int			distance;
 	int			cur_dist;
 
-	distance = 0xFFFFFFF;
+	distance = 2147483647;
 	closest = NULL;
 	cur = list;
 	while (cur)
