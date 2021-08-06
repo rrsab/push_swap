@@ -82,8 +82,8 @@ void	ft_init_sort(t_heap *heap)
 {
 	heap->big = ft_find_biggest_loop(heap->a, 1);
 	heap->size = ft_list_size(heap->a);
-	heap->group_cnt = ft_max(1, (int)(heap->max / 120.0));
-	heap->group_sz = heap->max / heap->group_cnt;
+	heap->group_numb = ft_max(1, (int)(heap->max / 120.0));
+	heap->group_sz = heap->max / heap->group_numb;
 }
 
 void	ft_main_sort(t_heap *heap, int cur_group)
@@ -91,7 +91,7 @@ void	ft_main_sort(t_heap *heap, int cur_group)
 	int	distance;
 
 	ft_init_sort(heap);
-	while (heap->size >= heap->big && cur_group <= (heap->group_cnt + 1))
+	while (heap->size >= heap->big && cur_group <= (heap->group_numb + 1))
 	{
 		heap->temp = ft_closest_in_group(heap->a, cur_group, heap->group_sz);
 		if (heap->temp == NULL && ++cur_group)
@@ -107,7 +107,7 @@ void	ft_main_sort(t_heap *heap, int cur_group)
 			ft_push_b(heap);
 			(heap->size)--;
 		}
-		else if (heap->group_cnt == 1)
+		else if (heap->group_numb == 1)
 			ft_rotate_a_b(heap);
 		else
 			ft_rotate(heap, ft_min(1, ft_max(-1, distance)), 0);

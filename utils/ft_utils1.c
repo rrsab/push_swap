@@ -6,7 +6,7 @@
 /*   By: salyce <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/01 21:03:37 by salyce            #+#    #+#             */
-/*   Updated: 2021/08/01 21:04:00 by salyce           ###   ########.fr       */
+/*   Updated: 2021/08/05 20:39:08 by salyce           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,8 @@ int	ft_atoi_new(const char *str, t_heap *heap)
 	while ((str[i] >= '0') && (str[i] <= '9'))
 	{
 		result = result * 10 + (str[i] - '0');
-		if ((result > 2147483648 && sign == -1) || (result > 2147483647 &&
-		sign == 1))
+		if ((result > 2147483648 && sign == -1) || (result > 2147483647
+				&& sign == 1))
 		{
 			ft_exit_error(heap);
 		}

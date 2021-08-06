@@ -38,7 +38,7 @@ typedef struct s_heap
 	int			max;
 	int			big;
 	int			size;
-	int			group_cnt;
+	int			group_numb;
 	int			group_sz;
 	t_pslist	*temp;
 }				t_heap;

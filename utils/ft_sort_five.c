@@ -103,7 +103,7 @@ void	ft_sort_five_list(t_heap *heap)
 {
 	if (heap->max == 2)
 		ft_swap_a(heap);
-	if (heap->max <= 3)
+	if (heap->max == 3)
 		ft_sort_three_list(0, heap);
 	if (heap->max == 4)
 		ft_sort_four_list(0, heap);
